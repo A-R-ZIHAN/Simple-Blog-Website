@@ -1,0 +1,148 @@
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+a{
+  text-decoration: none;
+}
+/* Navbar Start */
+#navbar li{
+  list-style-type:none;
+  display: inline;
+  font-size: 30px;
+  margin: 2%;
+  
+ 
+}
+#navbar li a{
+  text-decoration: none;
+  color: aliceblue;
+}
+#navbar{
+  background-color: rgb(63, 63, 207);
+  color: rgb(255, 255, 255) !important;
+  padding: 1%;
+}
+@media only screen and (max-width: 720px) {
+#navbar li{
+  font-size: 20px;
+}
+}
+/* Navbar End */
+
+
+
+
+/* Blogs start */
+.heading{
+  width: 100%;
+  text-align: center;
+  padding: 1%;
+  font-size: 50px;
+
+}
+.blogs{
+  min-width: 30%;
+  max-width: 50%;
+  border-left: 5px solid rgb(0, 204, 255);
+  background-color: rgb(54, 129, 138);
+  color: rgb(255, 255, 255);
+  padding: 2%;
+  transition: all 0.3s;
+  border-radius: 20px 0px 0px 0px;
+  margin: 2%;
+
+}
+.blogs:hover{
+  background-color: transparent;
+  color: rgb(54, 129, 138);
+  transition: all 0.3s;
+  cursor: pointer;
+  border-left: 5px solid rgb(0, 204, 255);  
+  border-radius: 0px 20px 0px 0px;
+}
+
+#title{
+  padding: 1%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 720px) {
+ .blogs{
+   max-width: 100%;
+   min-width: 100%;
+   margin: 0;
+ }
+  }
+/* Blogs End */
+
+
+
+/* Add blogs  */
+#form{
+  padding: 2%;
+  border: 1px solid royalblue;
+  width: 30%;
+  margin: 2%;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  transform: translate(-40%,-40%);
+ 
+}
+#titleForm,#description,#snippet{
+  margin: 1%;
+  width: 80%;
+
+}
+#description{
+  resize: none;
+}
+#btn{
+  width: 80%;
+  margin-left: 1%;
+
+}
+@media only screen and (max-width: 1200px) {
+  #form{
+    max-width: 40%;
+    min-width: 40%;
+    margin: 0;
+  }
+   }
+@media only screen and (max-width: 1200px) {
+  #form{
+    max-width: 80%;
+    min-width: 80%;
+    margin: 0;
+  }
+   }
+/* Add blogs end  */
+
+
+/* Blog Details  */
+.blogsDetails{
+  padding-bottom: 3%;
+  border: 5px solid rgb(54, 129, 138);
+  margin: 2%;
+  border-radius: 20px 0px 20px 0px;
+  transition: all 0.3s;
+}
+
+.blogsDetails:hover{
+  padding-bottom: 3%;
+  border: 5px solid rgb(54, 129, 138);
+  margin: 2%;
+  border-radius: 0px 20px 0px 20px;
+  transition: all 0.3s;
+}
+
+#descriptionDetails{
+ font-size: 40px;
+ padding: 2%;
+
+}
+#btnGoback{
+  padding: 3%;
+  text-decoration: none;
+  margin: 2%;
+}
+/* Blog Details End  */

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Blogs</title>
+</head>
+<body>
+  <%- include('./partials/navbar') %>
+  <h1 class='heading'>BLOGS!</h1> <br> 
+  
+  
+   <%if(blogs.length > 0 ){%>
+    <% blogs.forEach((value)=>{ %>
+      <a href="/blogs/<%= value._id %>" >
+      <div class="blogs"> 
+        
+      <h3 id="title"><%=value.title%></h3> <br>
+      <p id="snippet"><%=value.snippet%></p> <br>
+    
+    </div>
+  </a>
+      <%  })%>
+  <% } %>
+ 
+ 
+
+</body>
+</html>

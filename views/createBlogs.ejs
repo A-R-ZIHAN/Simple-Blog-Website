@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Create Blogs</title>
+</head>
+<body>
+  <%- include('./partials/navbar') %>
+  <h1  style="text-align: center;">Create BLOGS!!</h1>
+  
+  <form action="/blog/addBlogs" method="POST" id="form">
+    <h2 style="text-align: center;">Add a blog</h2> <br>
+    <input type="text" name="title" placeholder="Title" id="titleForm"> <br>
+    <input type="text" name="snippet" placeholder="Sippet" id="snippet"><br>
+    <textarea type="text" name="description" placeholder="Description" id="description" rows="10" cols="50"></textarea><br>
+    <button id="btn">SUBMIT</button>
+  </form>
+</body>
+</html>
